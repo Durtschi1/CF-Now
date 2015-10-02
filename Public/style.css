@@ -1,0 +1,129 @@
+html{
+	height: 100%;
+	margin: 0px;
+}
+
+h1{
+	color:#68228B;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+#mainPage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.angular-google-map-container { 
+	height: 500px;
+}
+
+.schoolName{
+	color: #68228B;
+	font-weight: bold;
+	font-size: 18px;
+	padding-left: 7px;
+	padding-right: 2px;
+	width: 400px;
+	list-style-type: none;
+	border-color: silver;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	margin: 0px 0px 4px 14px;
+}
+
+.schoolName:hover{
+	cursor: pointer;
+	background-color: #68228B;
+	color: white;
+}
+.schoolInfo{
+	color: black;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: arial;
+	background-color: white;
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.schoolBtn{
+	background-color: #E8D8E0;
+	border-radius: 3px;
+	font-size: 12px;
+	border-color: #e28600;
+	border-width: 1px;
+	border-style: solid;
+	color: #68228B;
+	padding: 2px;
+	line-height: .9em;
+	float: right;
+	margin-right: 4px;
+	margin-top: 4px;
+}
+.addBtn{
+	background-color: #E8D8E0;
+	border-radius: 3px;
+	font-size: 12px;
+	border-color: #e28600;
+	border-width: 1px;
+	border-style: solid;
+	color: #68228B;
+	padding: 2px 5px 2px 5px;
+	line-height: .9em;
+	margin-bottom: 3px;
+}
+#loginBtn{
+	margin-left: 15px;
+	margin-top: 10px;
+	position: absolute;
+}
+.col-sm-2 control-label{
+	border-color: #68228B;
+	width: 400px;
+}
+#message-text{
+	height: 120px;
+    width: 95%;
+    margin: auto;
+}
+.lastUpdated{
+	font-weight: normal;
+	font-size: 12px;
+	font-style: italic;
+}
+.studentListing{
+	font-size: 17px;
+	font-weight: normal;
+}
+.studentsList{
+	line-height: 18px;
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate){
+	display: list-item !important;
+}
+.panel-group{
+	width: 430px;
+	padding-left: 15px;
+}
+.ng-binding:hover{
+	color: #68228B;
+	text-decoration: underline;
+}
+.accordion-toggle:focus{
+	outline: none;
+	color: #68228B;
+	text-decoration: none;
+}
+.panel-group{
+	height: 80vh;
+	overflow: auto;
+}
+
+

@@ -1,0 +1,32 @@
+{
+  "name": "CF",
+  "version": "0.0.0",
+  "authors": [
+    "Trae Durtschi"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-google-maps": "~2.1.5",
+    "angular-route": "~1.4.1",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.0",
+    "bootstrap": "~3.3.5",
+    "jqueryui": "~1.11.4",
+    "angular-google-places-autocomplete": "~0.2.7",
+    "angular-google-places-map": "~1.1.2",
+    "angular-bootstrap": "~0.13.3"
+  },
+  "resolutions": {
+    "angular": "~1.3.x"
+  }
+}

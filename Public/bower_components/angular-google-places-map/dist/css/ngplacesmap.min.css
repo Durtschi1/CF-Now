@@ -1,0 +1,21 @@
+.dp-places-map-wrapper .dp-places-map-input{
+	border:1px solid transparent;
+	border-radius:2px 0 0 2px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	height:32px;outline:none;
+	box-shadow:0 2px 6px rgba(0,0,0,0.3);
+	background-color:#fff;
+	font-size:15px;
+	font-weight:300;
+	margin:30px 0 0 12px;
+	padding:0 11px 0 13px;
+	text-overflow:ellipsis;
+	width:calc(58%)
+	}
+.dp-places-map-wrapper .dp-places-map-input:focus{border-color:#68228B;border-radius: 4px;border-width:2px}
+.dp-places-map-wrapper .dp-places-map-canvas{width:750px;height:80vh;border-radius:5px};
+.dp-places-map-wrapper .dp-places-map-canvas.responsive{width:100%;}
+
+@media (min-width:468px){.dp-places-map-wrapper .dp-places-map-input{width:300px}}
+@media (min-width:830px){.dp-places-map-wrapper .dp-places-map-input{width:400px}}

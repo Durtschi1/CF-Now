@@ -1,0 +1,64 @@
+
+<a class="btn btn-default" href="#/login" role="button" id="loginBtn">Login</a>
+<h1>Cystic Fibrosis Now</h1>
+
+<div id="mainPage">
+	<div class="theMap">
+		<places-map address="initAddress" selected="selectedPlace" selectedSchool="currentSchool(thisPlace)">
+		</places-map>
+	</div>
+
+<!-- 	<div class="theList">
+			<div ng-repeat="school in selectedPlace" ng-click="getSchoolData(school)"; "currentSchool(school.place_id)" class="schoolName">
+			{{school.name}}		{{school.count}}
+			 
+			    <li ng-repeat="cfer in school.cfersArr" ng-show="school.isVisible" class="studentsList">
+			    	<span class="studentListing">{{cfer.title}} - Grade: {{cfer.grade}} 
+			    	</span>
+			    	<button ng-show="school.isVisible" ng-click="open()" class="schoolBtn">Send</br>Message</button>
+			    	<div class="lastUpdated">Updated: {{cfer.updated | date:"shortDate"}}
+			    	</div>
+			    </li>
+			    	<div>
+    				<button ng-show="school.isVisible" class="addBtn" ng-click="addCfer(school.place_id)">Add CF</br>Student</button>
+    				<div>
+			    	<script type="text/ng-template" id="myModalContent.html">
+				        <div class="modal-body">
+				        	Send message to CF Caregiver:
+				        </div>
+				        <textarea class="form-control" id="message-text"></textarea>
+				        <div class="modal-footer">
+				            <button class="btn btn-primary" ng-click="ok()">OK</button>
+				            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+				        </div>
+    				</script>
+			</div>
+	</div> -->
+		<accordion close-others="true">
+		  <accordion-group ng-repeat="school in selectedPlace | orderBy: '-name': true" ng-click="getSchoolData(school)">
+		  	<accordion-heading>
+		  	{{school.name}} {{school.count}}
+		  	</accordion-heading>
+				<li ng-repeat="cfer in school.cfersArr" ng-show="school.isVisible" class="studentsList">
+			    	<span class="studentListing">{{cfer.title}} - Grade: {{cfer.grade}} 
+			    	</span>
+			    	<button ng-show="school.isVisible" ng-click="open()" class="schoolBtn">Send</br>Message</button>
+			    	<div class="lastUpdated">Updated: {{cfer.updated | date:"shortDate"}}
+			    	</div>
+			    </li>
+			    	<div>
+    				<button ng-show="school.isVisible" class="addBtn" ng-click="addCfer(school.place_id)">Add CF</br>Student</button>
+    				</div>
+			    	<script type="text/ng-template" id="myModalContent.html">
+				        <div class="modal-body">
+				        	Send message to CF Caregiver:
+				        </div>
+				        <textarea class="form-control" id="message-text"></textarea>
+				        <div class="modal-footer">
+				            <button class="btn btn-primary" ng-click="ok()">OK</button>
+				            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+				        </div>
+    				</script>
+		  </accordion-group>
+		</accordion>
+</div>
